@@ -1,0 +1,13 @@
+
+#the try statement just like the for loop supports an else statement 
+#the try statement supports finally "always executed'
+print('converting')
+try:
+    print(int("1"))
+except:
+    print('Conversion Fail!')
+else:#if not except
+    print('conversion sucessful')
+finally:
+    print("done")
+
