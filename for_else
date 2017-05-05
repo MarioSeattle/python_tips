@@ -1,0 +1,24 @@
+needle = 'd'
+haystack = ['a', 'b', 'c', 'd']
+found = False
+for letter in haystack:
+    if needle == letter:
+        print('Found!!!')
+        found = True
+        break
+if not found:
+    print('Not Found!!!')
+
+
+#python for loops have an else
+#no marker variable
+#only if the loop in completly finish or if not break occurts
+
+for letter in haystack:
+    if needle == letter:
+        print('Found!!!')
+       
+        break
+else:
+    print('Not Found!!!')
+
