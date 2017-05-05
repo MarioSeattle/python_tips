@@ -1,0 +1,14 @@
+#wrong Way
+cities = ["New York", "Sao Pablo", "San Jose"]
+
+i = 0
+
+for city in cities:
+    print(i, city)
+    i += 1
+    
+#enumerate function will pass the list of cities, 
+#enumerate will return a list of indexes and city names
+
+for i, city in enumerate(cities):
+    print(i, city)
