@@ -1,0 +1,19 @@
+#Wrong way
+#x = 10
+#y = -10
+
+#we can even assign values as long as they match the parameters 
+
+x, y = 10, -10
+
+print('Before: x = %d, y = %d' % (x,y))
+
+#wrong way by creating a temporary variable
+#tmp = y 
+#y = x
+#x = tmp
+
+#right way in one line of code, swapping variables around
+
+x, y = y, x
+print('After: x = %d, y = %d' % (x, y))
