@@ -1,0 +1,22 @@
+#We don't have to read the entire text "text = f.read()""
+#we don't need to manually splited since we can loop directly in the file object
+f = open('text.txt')
+text = f.read()
+for line in text.split('\n'):
+    print(line)
+f.close()
+
+
+#good way
+#loop directly over the file object..you can use it as an ititrate
+f = open('text.txt')
+for line in f:
+    print(line)
+f.close()
+
+#even better way
+#everything under with are executed in a context 
+#allows to do something without having to close and clean up
+with open('text.txt') as f:
+    for line in f:
+        print(line)
